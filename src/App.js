@@ -1,18 +1,14 @@
-import React from 'react';
-import Navbar from './component/Sidebar';
-import Menubar from './component/Menubar';
-import { Route } from 'react-router-dom';
-import Profile from './AllComp/Profile';
-import NavbarSideBar from './component';
-
-
-const App=()=>{
-    return(
-        <>
-        <NavbarSideBar/>
-        <Route path='/profile' exact component={Profile}/>
-        </>
-        
+import React from 'react'
+import Header from './components/Header'
+import Home from './components/Home'
+import './App.css'
+function App() {
+    return (
+        <div className="App">
+            <Header/>
+            <Home/>
+        </div>
     )
 }
-export default App;
+
+export default App
